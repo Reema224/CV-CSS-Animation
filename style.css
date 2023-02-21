@@ -1,12 +1,18 @@
-.body{
-    margin: 0;
+body{
+    margin: 10px;
     padding: 0;
+    animation-name: example;
+    animation: example 1s infinite;
 }
-.picture {
+#picture {
     height: 95px;
     width: 100px;
     border: 2px solid rgb(164, 25, 203);
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    animation-name: rotate;
+    transition: all 0.1s ease;
+    /* animation: rotate 1.5s infinite linear; */
+    
 }
 .container{
     gap: 30px;
@@ -43,4 +49,57 @@ font-size: larger;
 .content{
     flex-direction: row;
    
+}
+@keyframes example {
+    0% {
+        background-color: #00F900;
+    }
+
+    12.5% {
+        background-color: #2020d0;
+    }
+
+    25% {
+        background-color: #993399;
+    }
+
+    37.5% {
+        background-color: #FF85E0;
+    }
+
+    50% {
+        background-color: #F9E600;
+    }
+
+    62.5% {
+        background-color: #FF9900;
+    }
+
+    75% {
+        background-color: #0edfdc;
+    }
+
+    87.5% {
+        background-color: #FDFDFD;
+    }
+
+    100% {
+        background-color: #f30606;
+    }
+}
+
+.rotate:hover {
+    animation: rotate 0.1s infinite alternate;
+    /* -webkit-transform: rotate(360deg) translateZ(0); */
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
