@@ -1,0 +1,46 @@
+.body{
+    margin: 0;
+    padding: 0;
+}
+.picture {
+    height: 95px;
+    width: 100px;
+    border: 2px solid rgb(164, 25, 203);
+    border-radius: 50%;
+}
+.container{
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* align-content: flex-start; */
+    
+}
+.name{
+margin-top: -15px;
+}
+.contact-info{
+   margin-left: auto;
+}
+.title{
+    color: rgb(164, 25, 203);
+    text-shadow: 2px 2px 8px rgb(128, 184, 226);
+    margin-top: -13px;
+}
+.text1{
+  margin-left:72px;
+font-size: larger;
+}
+.text2 li{
+    font-size: larger;
+    list-style-type: none;}
+.text1 li{
+    list-style-type: none;
+}
+.text, .text-title{
+    font-size: larger;
+}
+.content{
+    flex-direction: row;
+   
+}
